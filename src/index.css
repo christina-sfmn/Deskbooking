@@ -88,12 +88,12 @@ nav ul li.active {
 
 div.logout-img {
   @apply w-7 h-7 bg-no-repeat bg-center bg-contain;
-  background-image: url("/src/assets/icons/logout-line.svg");
+  background-image: url("/assets/icons/logout-line.svg");
 }
 
 div.logout-img:hover {
   @apply transition-all;
-  background-image: url("/src/assets/icons/logout-full.svg");
+  background-image: url("/assets/icons/logout-full.svg");
 }
 
 /* ----- LOGIN ------- */

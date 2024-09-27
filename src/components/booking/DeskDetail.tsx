@@ -234,7 +234,7 @@ export const DeskDetail = () => {
 
             {selectedDeskType === "FlexDesk" && (
               <>
-                <section className="flex items-center justify-center gap-5">
+                <section className="flex items-center gap-5">
                   <div className="flex flex-col">
                     <label htmlFor="dateFrom" className="font-bold">
                       von:
