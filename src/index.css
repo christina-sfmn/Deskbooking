@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ----- GENERAL STYLES ----- */
+
+body {
+  @apply overflow-x-hidden;
+}
+
+h1 {
+  @apply md:text-5xl text-4xl font-light md:mt-10;
+}
+
+h2 {
+  @apply text-2xl font-bold mb-3;
+}
+
+h3 {
+  @apply text-xl font-bold mt-5;
+}
+
+h4 {
+  @apply text-lg font-bold inline-block border-b-[1.5px] border-booking_grey mt-3;
+}
+
+p,
+ul,
+ol,
+form {
+  @apply font-light;
+}
+
+/* ----- Forms & Buttons ----- */
+
+form input {
+  @apply w-full border-2 border-booking_grey rounded-lg px-3 py-2 mb-1;
+}
+
+form select {
+  @apply w-full border-2 border-booking_grey rounded-lg px-2 py-[0.6rem] mb-1;
+}
+
+/* Custom arrow in select fields */
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem top 52.5%;
+  background-size: 0.65rem auto;
+}
+
+form input::placeholder,
+form select.placeholder {
+  @apply text-booking_grey contrast-75;
+}
+
+form label {
+  @apply font-semibold;
+}
+
+form .label-container {
+  @apply flex flex-col items-start justify-center;
+}
+
+button {
+  @apply bg-booking_matteblack hover:bg-booking_darkgrey text-white transition-all font-semibold px-3 py-2 text-center rounded-md shadow;
+}
+
+/* ----- NAVIGATION ----- */
+
+header img,
+nav ul li {
+  @apply cursor-pointer;
+}
+
+nav ul li:hover {
+  @apply border-b-[1.5px] border-booking_grey;
+}
+
+nav ul li.active {
+  @apply font-bold border-b-[1.5px] border-booking_grey;
+}
+
+.mobile-navigation li {
+  @apply text-xl text-white hover:text-black hover:bg-booking_lightgrey hover:pl-6 transition-all border-b-[1.5px] py-5;
+}
+
+div.logout-img {
+  @apply w-7 h-7 bg-no-repeat bg-center bg-contain;
+  background-image: url("/src/assets/icons/logout-line.svg");
+}
+
+div.logout-img:hover {
+  @apply transition-all;
+  background-image: url("/src/assets/icons/logout-full.svg");
+}
+
+/* ----- LOGIN ------- */
+
+.container-login {
+  @apply w-full h-screen flex justify-center items-center;
+}
+
+.container-center {
+  @apply md:w-1/3 flex flex-col py-32 justify-center items-center;
+}
+
+img.logo-login-register {
+  @apply w-80;
+}
+
+.form-login-register {
+  @apply flex flex-col gap-1 w-full pt-20;
+}
+
+/* ----- HOME PAGE ----- */
+
+.home-navigation h2 {
+  @apply font-light;
+}
+
+.home-navigation div {
+  @apply flex flex-col items-center justify-center bg-booking_lightgrey hover:bg-booking_grey transition-all text-lg font-light shadow rounded p-8 cursor-pointer min-h-40;
+}
+
+/* ----- BOOKING PLAN ----- */
+
+.table-container div {
+  @apply flex items-center justify-center;
+}
+
+.table-container div.bookable {
+  @apply bg-booking_lightgrey hover:bg-booking_grey transition-all text-center p-5 cursor-pointer;
+}
+
+.table-container div.booked-flex {
+  @apply bg-booking_flexdesk text-center p-5 cursor-not-allowed;
+}
+
+.table-container div.booked-fix {
+  @apply bg-booking_fixdesk text-white text-center p-5 cursor-not-allowed;
+}
+
+.desk-status li::before {
+  @apply content-["⬤"] mr-1 text-lg;
+}
+
+.desk-status li.bookable::before {
+  @apply text-booking_lightgrey contrast-75;
+}
+
+.desk-status li.booked-flex::before {
+  @apply text-booking_flexdesk;
+}
+
+.desk-status li.booked-fix::before {
+  @apply text-booking_fixdesk;
+}
+
+.desk-equipment {
+  @apply list-disc ml-5;
+}
+
+/* ----- RESERVATIONS --- */
+
+.reservation-list,
+.reservation-list-bookingview {
+  @apply mb-2;
+}
+
+.reservation-list li,
+p.reservation-list {
+  @apply my-1 py-2;
+}
+
+.reservation-list-bookingview li,
+p.reservation-list-bookingview {
+  @apply list-disc mt-1 ml-5 pt-1;
+}
+
+/* ----- FAVORITES --- */
+
+.dot-bookable {
+  @apply relative -top-[0.1rem] text-sm ml-[0.35rem] mr-4;
+}
+
+/* ----- FOOTER ----- */
+
+footer div a {
+  @apply cursor-pointer;
+}
+
+footer div a:first-of-type {
+  @apply after:content-["|"] after:ml-3;
+}
+
+footer div a:hover {
+  @apply underline;
+}
