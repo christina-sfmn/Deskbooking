@@ -170,7 +170,7 @@ export const ProfilePage = () => {
             </form>
             <section className="md:w-2/5 w-full leading-7">
               <img
-                src="src/assets/img/user-profile.svg"
+                src="/assets/img/user-profile.svg"
                 alt="User Profil"
                 className="md:w-full w-1/2 max-h-80 mb-5 mx-auto"
               />

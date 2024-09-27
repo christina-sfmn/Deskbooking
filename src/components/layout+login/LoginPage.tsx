@@ -57,7 +57,7 @@ export const LoginPage = () => {
     <main className="container-login">
       <div className="container-center">
         <img
-          src="src/assets/Diamir-Logo.png"
+          src="/assets/Diamir-Logo.png"
           alt="Diamir Logo"
           className="logo-login-register"
         />

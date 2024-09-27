@@ -19,7 +19,7 @@ export const Header = () => {
     <header className="sticky top-0 left-0 w-full h-20 bg-booking_lightgrey flex items-center justify-between shadow px-5 py-3 z-40">
       <div>
         <img
-          src="/src/assets/Diamir-Logo.png"
+          src="/assets/Diamir-Logo.png"
           alt="Diamir Logo"
           className={`isActive("/home") ? "active" : ""} h-10`}
           onClick={() => handleMenuClick(`/home`)}
@@ -30,7 +30,7 @@ export const Header = () => {
         onClick={toggleMenu}
         className="md:hidden bg-transparent hover:bg-white shadow-none px-2 py-1">
         <img
-          src="/src/assets/icons/burger-menu.svg"
+          src="/assets/icons/burger-menu.svg"
           alt="Navigationsbutton"
           className="w-12 h-12"
         />

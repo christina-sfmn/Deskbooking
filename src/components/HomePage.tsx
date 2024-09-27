@@ -10,7 +10,7 @@ export const HomePage = () => {
       <section className="home-navigation grid md:grid-cols-2 grid-cols-1 gap-5 md:mt-32">
         <div onClick={() => navigate(`/booking-plan`)}>
           <img
-            src="/src/assets/icons/bookingplan.svg"
+            src="/assets/icons/bookingplan.svg"
             alt="Bookingplan"
             className="w-16"
           />
@@ -18,7 +18,7 @@ export const HomePage = () => {
         </div>
         <div onClick={() => navigate(`/reservations`)}>
           <img
-            src="/src/assets/icons/reservations.svg"
+            src="/assets/icons/reservations.svg"
             alt="Bookingplan"
             className="w-12 mb-1"
           />
@@ -26,7 +26,7 @@ export const HomePage = () => {
         </div>
         <div onClick={() => navigate(`/favorites`)}>
           <img
-            src="/src/assets/icons/favorites.svg"
+            src="/assets/icons/favorites.svg"
             alt="Bookingplan"
             className="w-12 mb-1"
           />
@@ -34,7 +34,7 @@ export const HomePage = () => {
         </div>
         <div onClick={() => navigate(`/profile`)}>
           <img
-            src="/src/assets/icons/profile.svg"
+            src="/assets/icons/profile.svg"
             alt="Bookingplan"
             className="w-12 mb-1"
           />
@@ -46,7 +46,7 @@ export const HomePage = () => {
         <section className="home-navigation admin-section mt-5 md:mb-32">
           <div onClick={() => navigate(`/admin`)}>
             <img
-              src="/src/assets/icons/admin.svg"
+              src="/assets/icons/admin.svg"
               alt="Bookingplan"
               className="w-12 mb-1"
             />

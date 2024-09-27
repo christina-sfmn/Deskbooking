@@ -312,7 +312,7 @@ export const DeskDetail = () => {
 
         <div className="w-full">
           <img
-            src="/src/assets/img/luca-bravo-9l_326FISzk-unsplash.jpg"
+            src="/assets/img/luca-bravo-9l_326FISzk-unsplash.jpg"
             alt="Desk setup"
             className="mt-3 mb-10"
           />

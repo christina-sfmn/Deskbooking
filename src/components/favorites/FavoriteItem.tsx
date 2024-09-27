@@ -186,7 +186,7 @@ export const FavoriteItem = ({
         <div className="flex flex-col gap-2 w-5/6">
           <div className="flex items-center gap-1">
             <img
-              src="src/assets/icons/star-full.svg"
+              src="/assets/icons/star-full.svg"
               alt="FavoriteStar"
               className="w-7 mt-4 mr-1"
             />

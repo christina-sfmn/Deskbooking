@@ -133,7 +133,7 @@ export const OfficeDetail = () => {
                       onClick={() => handleAddToFavorites(desk.id)}
                       className="text-xs flex items-center justify-center gap-1 w-full bg-transparent hover:bg-transparent text-black hover:text-[#FDC04A] rounded-none shadow-none mt-1">
                       <img
-                        src="/src/assets/icons/star-empty.svg"
+                        src="/assets/icons/star-empty.svg"
                         alt="Zu Favoriten hinzufügen"
                         className="w-6"
                       />
@@ -144,7 +144,7 @@ export const OfficeDetail = () => {
                       onClick={() => handleRemoveFromFavorites(desk.id)}
                       className="text-xs flex items-center justify-center gap-1 w-full bg-transparent hover:bg-transparent text-black hover:text-[#FDC04A] rounded-none shadow-none mt-1">
                       <img
-                        src="/src/assets/icons/star-full.svg"
+                        src="/assets/icons/star-full.svg"
                         alt="Aus Favoriten entfernen"
                         className="w-6"
                       />

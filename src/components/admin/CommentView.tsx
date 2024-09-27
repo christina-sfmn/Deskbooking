@@ -57,7 +57,7 @@ export const CommentView = () => {
                   onClick={() => handleDelete(comment.id)}
                   className="bg-red-600 hover:bg-red-700 px-2 py-1">
                   <img
-                    src="/src/assets/icons/x.svg"
+                    src="/assets/icons/x.svg"
                     alt="Löschen"
                     className="w-4 h-6"
                   />

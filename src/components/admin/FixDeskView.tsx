@@ -85,7 +85,7 @@ export const FixDeskView = () => {
                   onClick={() => handleApprove(fixdesk.id)}
                   className="bg-green-600 hover:bg-green-700 px-2 py-1">
                   <img
-                    src="/src/assets/icons/check.svg"
+                    src="/assets/icons/check.svg"
                     alt="Bestätigen"
                     className="w-4 h-6"
                   />
@@ -94,7 +94,7 @@ export const FixDeskView = () => {
                   onClick={() => handleDecline(fixdesk.id)}
                   className="bg-red-600 hover:bg-red-700 px-2 py-1">
                   <img
-                    src="/src/assets/icons/x.svg"
+                    src="/assets/icons/x.svg"
                     alt="Löschen"
                     className="w-4 h-6"
                   />
